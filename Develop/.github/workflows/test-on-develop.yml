@@ -1,25 +1,19 @@
-name: Run Cypress Tests on Pull Requests to Develop
-
+name: Run Cypress Tests
 on:
   pull_request:
     branches:
       - develop
-
 jobs:
-  run-tests:
+  test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
+      - name: Checkout Code
         uses: actions/checkout@v3
-
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
-
-      - name: Install dependencies
+          node-version: '16'
+      - name: Install Dependencies
         run: npm install
-
-      - name: Run Cypress component tests
-        run: npm run test-compnent
+      - name: Run Cypress Tests
+        run: npx cypress run
