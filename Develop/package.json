@@ -17,13 +17,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^13.13.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "cypress": "^13.17.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "ts-node": "^10.9.2"
   },
   "dependencies": {
-    "@vitejs/plugin-react": "^4.3.1",
     "concurrently": "^8.2.2",
     "vitest": "^2.0.3"
   }
