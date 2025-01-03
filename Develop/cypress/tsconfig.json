@@ -1,9 +1,13 @@
 {
   "extends": "../tsconfig.json",
-    "compilerOptions": {
-      "target": "es5",
-      "lib": ["es5", "dom"],
-      "types": ["cypress", "node"]
-    },
-    "include": ["**/*.ts"]
+  "compilerOptions": {
+      "strict": true,
+      "baseUrl": "./",
+      "types": ["cypress"]
+  },
+  "include": [
+      "../cypress.config.ts",
+      "**/*.ts",
+      "**/*.tsx"
+  ]
 }
